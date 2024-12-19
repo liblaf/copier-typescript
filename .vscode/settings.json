@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "package.json.jinja": "json"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["package.json.jinja"],
+      "url": "https://json.schemastore.org/package.json"
+    }
+  ]
+}
