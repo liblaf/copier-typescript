@@ -1,9 +1,12 @@
 # https://copier.readthedocs.io/en/stable/configuring/
 
-_answers_file: .github/copier/.copier-answers-typescript.yaml
+_answers_file: .github/copier/.copier-answers.typescript.yaml
 
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
+
+_migrations:
+  - command: rm --force .github/copier/.copier-answers-typescript.yaml
 
 _skip_if_exists:
   - .gitignore
