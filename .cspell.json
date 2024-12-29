@@ -10,6 +10,7 @@
     "liblaf",
     "nuxt",
     "pids",
+    "stefanzweifel",
     "tsup",
     "vuepress",
     "wscript"

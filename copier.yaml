@@ -2,9 +2,6 @@
 
 _answers_file: .github/copier/.copier-answers.typescript.yaml
 
-_jinja_extensions:
-  - cookiecutter.extensions.SlugifyExtension
-
 _skip_if_exists:
   - .gitignore
   - .prettierignore
