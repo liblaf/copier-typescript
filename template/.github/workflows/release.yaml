@@ -98,7 +98,7 @@ jobs:
         with:
           name: pack
           path: pack/
-      - name: Create Pre-Release
+      - name: Upload Release Assets
         uses: liblaf/actions/release@main
         with:
           files: pack/*
