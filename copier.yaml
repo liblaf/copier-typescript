@@ -5,9 +5,6 @@ _answers_file: .github/copier/.copier-answers.typescript.yaml
 _jinja_extensions:
   - cookiecutter.extensions.SlugifyExtension
 
-_migrations:
-  - command: mv --no-clobber .github/copier/.copier-answers-typescript.yaml .github/copier/.copier-answers.typescript.yaml
-
 _skip_if_exists:
   - .gitignore
   - .prettierignore
