@@ -8,31 +8,18 @@
 
 This repository provides a robust TypeScript project template with automated workflows for CI/CD, dependency management, and code quality assurance. It features comprehensive configuration for modern development tools including Biome, tsup, and GitHub Actions, ensuring high-quality code and streamlined package publishing.
 
-[![][copier-shield]][copier-link] <br />
-[![][github-contributors-shield]][github-contributors-link]
-[![][github-forks-shield]][github-forks-link]
-[![][github-stars-shield]][github-stars-link]
-[![][github-issues-shield]][github-issues-link]
-[![][github-license-shield]][github-license-link]
+[![Made with Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json)](https://github.com/copier-org/copier) <br />
+[![GitHub contributors](https://img.shields.io/github/contributors/liblaf/copier-typescript)](https://github.com/liblaf/copier-typescript/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/liblaf/copier-typescript)](https://github.com/liblaf/copier-typescript/forks)
+[![GitHub Repo stars](https://img.shields.io/github/stars/liblaf/copier-typescript)](https://github.com/liblaf/copier-typescript/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/liblaf/copier-typescript)](https://github.com/liblaf/copier-typescript/issues)
+[![GitHub License](https://img.shields.io/github/license/liblaf/copier-typescript)](https://github.com/liblaf/copier-typescript/blob/main/LICENSE)
 
-[Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
+[Changelog](./CHANGELOG.md) · [Report Bug](https://github.com/liblaf/copier-typescript/issues) · [Request Feature](https://github.com/liblaf/copier-typescript/issues)
 
-![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![banner](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 </div>
-
-[copier-link]: https://github.com/copier-org/copier
-[copier-shield]: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json
-[github-contributors-link]: https://github.com/liblaf/copier-typescript/graphs/contributors
-[github-contributors-shield]: https://img.shields.io/github/contributors/liblaf/copier-typescript
-[github-forks-link]: https://github.com/liblaf/copier-typescript/forks
-[github-forks-shield]: https://img.shields.io/github/forks/liblaf/copier-typescript
-[github-issues-link]: https://github.com/liblaf/copier-typescript/issues
-[github-issues-shield]: https://img.shields.io/github/issues/liblaf/copier-typescript
-[github-license-link]: https://github.com/liblaf/copier-typescript/blob/main/LICENSE
-[github-license-shield]: https://img.shields.io/github/license/liblaf/copier-typescript
-[github-stars-link]: https://github.com/liblaf/copier-typescript/stargazers
-[github-stars-shield]: https://img.shields.io/github/stars/liblaf/copier-typescript
 
 ## ✨ Features
 
@@ -49,11 +36,9 @@ This repository provides a robust TypeScript project template with automated wor
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![BACK TO TOP](https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square)](#readme-top)
 
 </div>
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ## 📦 Installation
 
@@ -65,17 +50,15 @@ $ copier copy --trust gh:liblaf/copier-typescript .
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![BACK TO TOP](https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square)](#readme-top)
 
 </div>
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ## ⌨️ Local Development
 
 You can use Github Codespaces for online development:
 
-[![][github-codespace-shield]][github-codespace-link]
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/liblaf/copier-typescript)
 
 Or clone it for local development:
 
@@ -86,34 +69,23 @@ $ cd copier-typescript
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![BACK TO TOP](https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square)](#readme-top)
 
 </div>
-
-[github-codespace-shield]: https://github.com/codespaces/badge.svg
-[github-codespace-link]: https://codespaces.new/liblaf/copier-typescript
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ## 🤝 Contributing
 
-Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you’re made of.
+Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues](https://github.com/liblaf/copier-typescript/issues) to get stuck in to show us what you're made of.
 
-[![][pr-welcome-shield]][pr-welcome-link]
+[![🤯 PR WELCOME](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-typescript/pulls)
 
-[![][github-contrib-shield]][github-contrib-link]
+[![Contributors](https://contrib.rocks/image?repo=liblaf%2Fcopier-typescript)](https://github.com/liblaf/copier-typescript/graphs/contributors)
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![BACK TO TOP](https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square)](#readme-top)
 
 </div>
-
-[github-issues-link]: https://github.com/liblaf/copier-typescript/issues
-[pr-welcome-shield]: https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
-[pr-welcome-link]: https://github.com/liblaf/copier-typescript/pulls
-[github-contrib-shield]: https://contrib.rocks/image?repo=liblaf%2Fcopier-typescript
-[github-contrib-link]: https://github.com/liblaf/copier-typescript/graphs/contributors
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ## 🔗 Links
 
@@ -130,17 +102,13 @@ Contributions of all types are more than welcome, if you are interested in contr
 
 <div align="right">
 
-[![][back-to-top]](#readme-top)
+[![BACK TO TOP](https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square)](#readme-top)
 
 </div>
-
-[back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
 
 ---
 
 #### 📝 License
 
-Copyright © 2024 [liblaf][profile-link]. <br />
-This project is [MIT](./LICENSE) licensed.
-
-[profile-link]: https://github.com/liblaf
+Copyright © 2024 [liblaf](https://github.com/liblaf). <br />
+This project is [MIT](https://github.com/liblaf/copier-typescript/blob/main/LICENSE) licensed.
