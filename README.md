@@ -6,7 +6,7 @@
 
 <h1>Copier TypeScript</h1>
 
-This repository provides a robust TypeScript project template with automated workflows for CI/CD, linting, and dependency management. It features comprehensive configuration for modern development tools like Biome, tsup, and GitHub Actions, ensuring high-quality code and streamlined maintenance. The template is easily customizable through Copier and supports both ESM and CJS module formats for maximum compatibility.
+This repository provides a robust TypeScript project template with automated workflows for CI/CD, dependency management, and code quality assurance. It features comprehensive configuration for modern development tools including Biome, tsup, and GitHub Actions, ensuring high-quality code and streamlined package publishing.
 
 [![][copier-shield]][copier-link] <br />
 [![][github-contributors-shield]][github-contributors-link]
@@ -36,14 +36,16 @@ This repository provides a robust TypeScript project template with automated wor
 
 ## ✨ Features
 
-- 🤖 **Automated Workflows:** The repository includes GitHub Actions for automated PR management, repository updates, and CI/CD pipelines, ensuring smooth and efficient development processes;
-- 🛠️ **Template-Based Setup:** Using Copier, the repository provides a template-based setup for new projects, making it easy to bootstrap new repositories with consistent configurations;
-- 🧹 **Code Quality Assurance:** Integrated MegaLinter ensures high code quality by running multiple linters and formatters, automatically fixing issues and maintaining code consistency;
-- 🔄 **Automated Dependency Updates:** Renovate bot is configured to automatically update dependencies, keeping the project up-to-date with the latest versions of libraries and tools;
-- 📦 **TypeScript Ready:** The repository is pre-configured for TypeScript development, including tsup for building and packaging, making it easy to develop and publish TypeScript libraries;
-- 📜 **License Management:** The repository includes a MIT license by default, with options to customize the license, ensuring proper legal compliance for open-source projects;
-- 🧩 **Modular Configuration:** The repository uses a modular configuration approach with separate files for different aspects (e.g., Biome for linting, tsup for building), making it easy to customize and extend;
-- 🚀 **Pre-Release and Release Automation:** The repository includes workflows for creating pre-releases and managing full releases, ensuring a smooth and automated release process.
+- 🤖 **Automated Workflows:** The repository includes GitHub Actions workflows for automated PR management, repository maintenance, and CI/CD processes, ensuring smooth and efficient development cycles;
+- 🛠️ **Template-Based Setup:** Utilizes Copier templates for easy project initialization and updates, making it simple to maintain consistency across multiple projects;
+- 📦 **Package Management:** Includes a `package.json` template with pre-configured scripts for building, linting, and packaging, streamlining the development process;
+- 🧹 **Code Quality Assurance:** Integrates MegaLinter for comprehensive code quality checks, ensuring high standards of code hygiene and consistency;
+- 🔄 **Renovate Integration:** Automates dependency updates with Renovate, keeping the project dependencies up-to-date and secure;
+- 📜 **License Management:** Provides a default MIT license template, making it easy to manage legal aspects of the project;
+- 🚀 **Release Automation:** Includes workflows for automated pre-releases and releases, simplifying the process of publishing new versions;
+- 🧩 **Modular Configuration:** Offers a modular and configurable setup with `tsup` for building TypeScript projects, supporting both CommonJS and ES modules;
+- 📂 **Structured Directory Layout:** Follows a well-organized directory structure, making it easy to navigate and manage the project files;
+- 🔧 **VS Code Integration:** Includes pre-configured VS Code settings for a seamless development experience, with support for excluding unnecessary files like `node_modules`.
 
 <div align="right">
 
@@ -133,3 +135,12 @@ Contributions of all types are more than welcome, if you are interested in contr
 </div>
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-black?style=flat-square
+
+---
+
+#### 📝 License
+
+Copyright © 2024 [liblaf][profile-link]. <br />
+This project is [MIT](./LICENSE) licensed.
+
+[profile-link]: https://github.com/liblaf
