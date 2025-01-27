@@ -2,6 +2,9 @@
 
 _answers_file: .github/copier/.copier-answers.typescript.yaml
 
+_migrations:
+  - rm --force --verbose .github/workflows/release.yaml
+
 _skip_if_exists:
   - .gitignore
   - .prettierignore
@@ -11,6 +14,9 @@ _skip_if_exists:
   - tsup.config.ts
 
 _subdirectory: template
+
+_tasks:
+  - rm --force --verbose .github/workflows/release.yaml
 
 email:
   type: str
