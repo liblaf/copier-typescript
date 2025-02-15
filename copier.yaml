@@ -10,6 +10,7 @@ _skip_if_exists:
   - .gitignore
   - .prettierignore
   - .vscode/settings.json
+  - biome.jsonc
   - package.json
   - tsconfig.json
   - tsup.config.ts
