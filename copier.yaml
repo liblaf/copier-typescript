@@ -6,6 +6,7 @@ _migrations:
   - rm --force --verbose .github/workflows/shared-release.yaml
 
 _skip_if_exists:
+  - .envrc
   - .gitignore
   - .prettierignore
   - .vscode/settings.json
