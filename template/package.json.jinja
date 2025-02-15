@@ -1,55 +1,54 @@
 {
-  "$schema": "https://json.schemastore.org/package.json",
   "name": "{{ name }}",
   "version": "0.0.0",
   "description": "TODO",
-  "keywords": [
-    "TODO"
-  ],
+  "keywords": [],
   "homepage": "https://github.com/{{ owner }}/{{ repo }}",
   "bugs": {
     "url": "https://github.com/{{ owner }}/{{ repo }}/issues"
   },
-  "license": "MIT",
+  "license": "{{ license }}",
   "author": {
     "name": "{{ owner }}",
-    "email": "{{ email }}",
-    "url": "{{ author_url }}"
+    "url": "{{ author_url }}",
+    "email": "{{ email }}"
   },
   "files": [
-    "./dist"
+    "dist"
   ],
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/index.d.mts",
-        "default": "./dist/index.mjs"
-      },
-      "require": {
         "types": "./dist/index.d.ts",
         "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
       }
     }
   },
+  "type": "module",
   "repository": "github:{{ owner }}/{{ repo }}",
   "scripts": {
     "build": "tsup",
-    "lint": "prettier --write . && biome check --write",
-    "prepack": "pnpm run build"
+    "check": "biome check --write",
+    "prepack": "tsup"
   },
+  "dependencies": {},
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
-    "@cloudflare/workers-types": "latest",
-    "prettier": "latest",
+    "@biomejs/biome": "latest",
+    "@tsconfig/bun": "latest",
+    "@types/bun": "latest",
     "tsup": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "latest"
   },
   "publishConfig": {
     "access": "public",
-    "provenance": true,
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org",
+    "provenance": true
   },
-  "dependencies": {}
+  "readme": "README.md"
 }

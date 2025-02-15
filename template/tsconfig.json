@@ -1,16 +1,3 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "Bundler",
-    "strict": true,
-    "skipLibCheck": true,
-    "lib": ["ESNext"],
-
-    "baseUrl": ".",
-    "paths": {
-      "@": ["src"],
-      "@/*": ["src/*"]
-    }
-  }
+  "extends": "@tsconfig/bun/tsconfig.json"
 }

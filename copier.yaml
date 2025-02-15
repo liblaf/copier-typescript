@@ -3,7 +3,7 @@
 _answers_file: .github/copier/.copier-answers.typescript.yaml
 
 _migrations:
-  - rm --force --verbose .github/workflows/release.yaml
+  - rm --force --verbose .github/workflows/shared-release.yaml
 
 _skip_if_exists:
   - .gitignore
@@ -16,7 +16,7 @@ _skip_if_exists:
 _subdirectory: template
 
 _tasks:
-  - rm --force --verbose .github/workflows/release.yaml
+  - rm --force --verbose .github/workflows/shared-release.yaml
 
 email:
   type: str
