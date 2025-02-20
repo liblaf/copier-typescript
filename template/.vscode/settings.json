@@ -1,4 +1,10 @@
 {
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "files.exclude": {
     "**/node_modules": true
   }

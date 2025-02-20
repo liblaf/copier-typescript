@@ -1,5 +1,15 @@
 {
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
   "files.associations": {
+    "jsr.json.jinja": "json",
     "package.json.jinja": "json"
+  },
+  "files.exclude": {
+    "**/node_modules": true
   }
 }
