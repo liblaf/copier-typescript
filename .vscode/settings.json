@@ -1,10 +1,4 @@
 {
-  "[json]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  },
   "files.associations": {
     "jsr.json.jinja": "json",
     "package.json.jinja": "json"
