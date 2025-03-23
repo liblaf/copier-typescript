@@ -2,8 +2,12 @@
 
 _answers_file: .github/copier/.copier-answers.typescript.yaml
 
+_external_data:
+  shared: "{{ answers_file_shared }}"
+
 _migrations:
-  - rm --force --verbose .github/workflows/shared-release.yaml
+  - rm --force --verbose ".github/copier/.copier-answers.typescript.yaml"
+  - rm --force --verbose ".github/workflows/shared-release.yaml"
 
 _skip_if_exists:
   - .envrc
@@ -20,43 +24,49 @@ _skip_if_exists:
 _subdirectory: template
 
 _tasks:
-  - rm --force --verbose .github/workflows/shared-release.yaml
+  - rm --force --verbose ".github/copier/.copier-answers.typescript.yaml"
+  - rm --force --verbose ".github/workflows/shared-release.yaml"
 
-email:
+answers_file_shared:
   type: str
-  help: The email address of the package author.
-  default: 30631553+liblaf@users.noreply.github.com
+  default: .config/copier/.copier-answers.shared.yaml
+
+author_name:
+  type: str
+  default: "{{ _external_data.shared.author_name }}"
+  when: false
+
+author_email:
+  type: str
+  default: "{{ _external_data.shared.author_email }}"
+  when: false
+
+project_name:
+  type: str
+  default: "{{ _external_data.shared.project_name }}"
+  when: false
+
+project_name_slug:
+  type: str
+  default: "{{ _external_data.shared.project_name_slug }}"
+  when: false
 
 license:
   type: str
-  help: Add a license to your project.
-  choices:
-    MIT License:
-      value: MIT
-    Other:
-      value: other
-  default: MIT
+  default: "{{ _external_data.shared.license }}"
+  when: false
 
-owner:
+github_user:
   type: str
-  help: The account owner of the repository.
-  default: liblaf
+  default: "{{ _external_data.shared.github_user }}"
+  when: false
 
-repo:
+github_repo:
   type: str
-  help: The name of the repository.
+  default: "{{ _external_data.shared.github_repo }}"
+  when: false
 
 author_url:
   type: str
   help: The homepage of the package author.
-  default: "https://github.com/{{ owner }}"
-
-copyright_holder:
-  type: str
-  help: The copyright holder of the repository.
-  default: "{{ owner }}"
-
-name:
-  type: str
-  help: The name of the package.
-  default: "@{{ owner }}/{{ repo }}"
+  default: "https://github.com/{{ github_user }}"

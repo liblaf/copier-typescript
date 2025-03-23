@@ -1,19 +1,19 @@
 {
-  "name": "{{ name }}",
+  "name": "{{ project_name_slug }}",
   "version": "0.0.0",
   "description": "TODO",
   "keywords": [
     "TODO"
   ],
-  "homepage": "https://github.com/{{ owner }}/{{ repo }}",
+  "homepage": "https://github.com/{{ github_user }}/{{ github_repo }}",
   "bugs": {
-    "url": "https://github.com/{{ owner }}/{{ repo }}/issues"
+    "url": "https://github.com/{{ github_user }}/{{ github_repo }}/issues"
   },
   "license": "{{ license }}",
   "author": {
-    "name": "{{ owner }}",
+    "name": "{{ github_user }}",
     "url": "{{ author_url }}",
-    "email": "{{ email }}"
+    "email": "{{ author_email }}"
   },
   "files": [
     "./dist"
@@ -31,10 +31,10 @@
     }
   },
   "type": "module",
-  "repository": "github:{{ owner }}/{{ repo }}",
+  "repository": "github:{{ github_user }}/{{ github_repo }}",
   "scripts": {
     "build": "tsup",
-    "check": "biome check --write",
+    "lint": "biome check --write",
     "prepack": "tsup"
   },
   "dependencies": {},
