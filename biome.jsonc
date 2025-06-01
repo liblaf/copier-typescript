@@ -1,4 +1,4 @@
 {
   "$schema": "https://biomejs.dev/schemas/latest/schema.json",
-  "extends": ["./template/.github/linters/biome.jsonc"]
+  "extends": ["template/.config/linters/biome.jsonc"]
 }
