@@ -3,7 +3,4 @@
 # DO NOT EDIT!
 
 [env]
-_.path = [
-  # TODO: migrate from direnv to mise until shell hooks are ready
-  # "{{ config_root }}/node_modules/.bin",
-]
+_.path = ["{{ config_root }}/node_modules/.bin"]
