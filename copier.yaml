@@ -10,9 +10,10 @@ _envops:
   line_statement_prefix: "# %%"
 
 _migrations: &migrations
-  - rm --force --verbose ".github/copier/.copier-answers.typescript.yaml"
-  - rm --force --verbose ".github/linters/biome.jsonc"
-  - rm --force --verbose ".github/workflows/shared-release.yaml"
+  - rm --force --verbose '.github/copier/.copier-answers.typescript.yaml'
+  - rm --force --verbose '.github/linters/biome.jsonc'
+  - rm --force --verbose '.github/workflows/release.yaml'
+  - rm --force --verbose '.github/workflows/shared-release.yaml'
 
 _skip_if_exists:
   - .gitignore
