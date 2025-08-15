@@ -1,9 +1,13 @@
-# https://copier.readthedocs.io/en/stable/configuring/
+# ref: <https://copier.readthedocs.io/en/stable/configuring/>
 
-_answers_file: .github/copier/.copier-answers.typescript.yaml
+_answers_file: .config/copier/.copier-answers.typescript.yaml
 
 _external_data:
   shared: "{{ answers_file_shared }}"
+
+_envops:
+  line_statement_prefix: "# %%"
+  line_comment_prefix: "# ##"
 
 _migrations: &migrations
   - rm --force --verbose ".github/copier/.copier-answers.typescript.yaml"
@@ -12,12 +16,9 @@ _migrations: &migrations
 
 _skip_if_exists:
   - .gitignore
-  - .prettierignore
-  - .prettierrc.json
   - .vscode/settings.json
   - biome.jsonc
   - bunup.config.ts
-  - jsr.json
   - package.json
   - tsconfig.json
   - "!.config/linters/biome.jsonc"

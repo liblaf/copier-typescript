@@ -1,7 +1,6 @@
 {
   "files.associations": {
-    "jsr.json.jinja": "json",
-    "package.json.jinja": "json"
+    "*.json.jinja": "json"
   },
   "files.exclude": {
     "**/node_modules": true
