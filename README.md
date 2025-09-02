@@ -45,7 +45,7 @@ This repository provides a robust TypeScript project template with automated wor
 To install `gh:liblaf/copier-typescript`, run the following command:
 
 ```bash
-$ copier copy --trust gh:liblaf/copier-typescript .
+copier copy --trust gh:liblaf/copier-typescript .
 ```
 
 <div align="right">
@@ -63,8 +63,8 @@ You can use Github Codespaces for online development:
 Or clone it for local development:
 
 ```bash
-$ git clone https://github.com/liblaf/copier-typescript.git
-$ cd copier-typescript
+git clone https://github.com/liblaf/copier-typescript.git
+cd copier-typescript
 ```
 
 <div align="right">
