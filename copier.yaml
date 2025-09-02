@@ -10,19 +10,22 @@ _envops:
   line_statement_prefix: "# %%"
 
 _migrations: &migrations
+  - rm --force --verbose '.config/copier/tsconfig.build.json'
+  - rm --force --verbose '.config/linters/biome.jsonc'
   - rm --force --verbose '.github/copier/.copier-answers.typescript.yaml'
   - rm --force --verbose '.github/linters/biome.jsonc'
   - rm --force --verbose '.github/workflows/release.yaml'
   - rm --force --verbose '.github/workflows/shared-release.yaml'
+  - rm --force --verbose '.prettierignore'
+  - rm --force --verbose '.prettierrc.json'
 
 _skip_if_exists:
+  - .config/mise/config.toml
   - .gitignore
   - .vscode/settings.json
   - biome.jsonc
-  - bunup.config.ts
   - package.json
   - tsconfig.json
-  - "!.config/linters/biome.jsonc"
 
 _subdirectory: template
 

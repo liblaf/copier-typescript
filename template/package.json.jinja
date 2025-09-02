@@ -1,11 +1,9 @@
 {
   "name": "{{ package_name }}",
-  "description": "TODO",
+  "description": "",
   "version": "0.1.0",
   "type": "module",
-  "keywords": [
-    "TODO"
-  ],
+  "keywords": [],
   "homepage": "https://github.com/{{ github_user }}/{{ github_repo }}",
   "bugs": {
     "url": "https://github.com/{{ github_user }}/{{ github_repo }}/issues"
@@ -17,30 +15,46 @@
     "email": "{{ author_email }}"
   },
   "bin": {},
-  "repository": "github:{{ github_user }}/{{ github_repo }}",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{ github_user }}/{{ github_repo }}.git"
+  },
   "funding": {
     "url": "https://github.com/{{ github_user }}/{{ github_repo }}?sponsor=1",
     "type": "github"
   },
   "scripts": {
     "build": "bunup",
-    "lint": "biome check --write",
-    "prepack": "npm run build"
+    "format:fix": "biome format --write",
+    "format": "biome format",
+    "lint:fix": "biome check --write",
+    "lint": "biome check",
+    "prepack": "npm run build",
+    "test:coverage": "bun test --coverage",
+    "test:watch": "bun test --watch",
+    "test": "bun test",
+    "tsc": "tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
-    "@biomejs/biome": "latest",
-    "@tsconfig/bun": "latest",
-    "@types/bun": "latest",
-    "bunup": "latest"
+    "@biomejs/biome": "^2",
+    "@liblaf/config": "^0.1",
+    "@types/bun": "^1",
+    "bunup": "^0.11",
+    "typescript": "^5"
   },
   "peerDependencies": {
-    "typescript": "latest"
+    "typescript": "^5"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/",
     "provenance": true
   },
-  "readme": "README.md"
+  "readme": "./README.md"
 }
