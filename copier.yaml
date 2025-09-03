@@ -14,7 +14,7 @@ _migrations: &migrations
   - rm --force --verbose '.config/linters/biome.jsonc'
   - rm --force --verbose '.github/copier/.copier-answers.typescript.yaml'
   - rm --force --verbose '.github/linters/biome.jsonc'
-  - rm --force --verbose '.github/workflows/release.yaml'
+  - rm --force --verbose '.github/workflows/publish.yaml'
   - rm --force --verbose '.github/workflows/shared-release.yaml'
   - rm --force --verbose '.prettierignore'
   - rm --force --verbose '.prettierrc.json'
