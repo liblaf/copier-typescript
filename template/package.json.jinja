@@ -18,32 +18,29 @@
     "email": "{{ author_email }}"
   },
   "bin": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/{{ github_user }}/{{ github_repo }}.git"
-  },
+  "repository": "github:{{ github_user }}/{{ github_repo }}",
   "funding": {
     "url": "https://github.com/{{ github_user }}/{{ github_repo }}?sponsor=1",
     "type": "github"
   },
   "scripts": {
     "build": "bunup",
-    "format:fix": "biome format --write",
     "format": "biome format",
-    "lint:fix": "biome check --write",
+    "format:fix": "biome format --write",
     "lint": "biome check",
+    "lint:fix": "biome check --write",
     "prepack": "npm run build",
+    "test": "bun test",
     "test:coverage": "bun test --coverage",
     "test:watch": "bun test --watch",
-    "test": "bun test",
-    "tsc": "tsc --noEmit"
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@liblaf/config": "^0.1",
     "@types/bun": "^1",
-    "bunup": "^0.11",
+    "bunup": "^0.15",
     "typescript": "^5"
   },
   "peerDependencies": {
