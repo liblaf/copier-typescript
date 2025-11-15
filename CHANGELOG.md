@@ -7,6 +7,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1](https://github.com/liblaf/copier-typescript/releases/tag/v0.1.1) - 2025-11-10
+
+### 🐛 Bug Fixes
+
+- **ci:** Ensure test workflow correctly handles projects without tests - [e20856b](https://github.com/liblaf/copier-typescript/commit/e20856bdac582cb449abd0037af981e1bf705c81) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integration
+
+- Update CI workflows for deterministic dependency installs and trusted publishing - [ac43a82](https://github.com/liblaf/copier-typescript/commit/ac43a82362d04015289f0a5d9e3d2ab1a99a1d70) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#17](https://github.com/liblaf/copier-typescript/pull/17)
+
 ## [0.1.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.1.0) - 2025-11-03
 
 ### 💥 BREAKING CHANGES
@@ -22,9 +37,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ✨ Features
 
-- **(build)** enhance build configuration and type support - [395c858](https://github.com/liblaf/copier-typescript/commit/395c8581bda2e2535f609c34842f3427367554d9) by [@liblaf](https://github.com/liblaf)
-- **(ci)** Introduce unified testing and secure release workflows - [310b965](https://github.com/liblaf/copier-typescript/commit/310b9654f3bfb52c0807426283f793ff982da631) by [@liblaf](https://github.com/liblaf)
-- **(release)** add configuration files for release automation - [0037556](https://github.com/liblaf/copier-typescript/commit/003755674dd786c7236c1648bd4989c5d349861e) by [@liblaf](https://github.com/liblaf)
+- **build:** enhance build configuration and type support - [395c858](https://github.com/liblaf/copier-typescript/commit/395c8581bda2e2535f609c34842f3427367554d9) by [@liblaf](https://github.com/liblaf)
+- **ci:** Introduce unified testing and secure release workflows - [310b965](https://github.com/liblaf/copier-typescript/commit/310b9654f3bfb52c0807426283f793ff982da631) by [@liblaf](https://github.com/liblaf)
+- **release:** add configuration files for release automation - [0037556](https://github.com/liblaf/copier-typescript/commit/003755674dd786c7236c1648bd4989c5d349861e) by [@liblaf](https://github.com/liblaf)
 - add JSR configuration file template - [347c5a4](https://github.com/liblaf/copier-typescript/commit/347c5a44cab76e318bb492d95995cc75c65e8f38) by [@liblaf](https://github.com/liblaf)
 
 ### 🐛 Bug Fixes
@@ -40,18 +55,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ♻ Code Refactoring
 
-- **(build)** switch from tsup to bunup - [fda6b75](https://github.com/liblaf/copier-typescript/commit/fda6b7572a9a38be4fc90af6c576ba80a20da9e1) by [@liblaf](https://github.com/liblaf)
-- **(build)** simplify package.json configuration - [83d200b](https://github.com/liblaf/copier-typescript/commit/83d200b7c6cf67461262b642c5fafb253fdb2057) by [@liblaf](https://github.com/liblaf)
+- **build:** switch from tsup to bunup - [fda6b75](https://github.com/liblaf/copier-typescript/commit/fda6b7572a9a38be4fc90af6c576ba80a20da9e1) by [@liblaf](https://github.com/liblaf)
+- **build:** simplify package.json configuration - [83d200b](https://github.com/liblaf/copier-typescript/commit/83d200b7c6cf67461262b642c5fafb253fdb2057) by [@liblaf](https://github.com/liblaf)
 - consolidate TypeScript configuration - [9fe6cee](https://github.com/liblaf/copier-typescript/commit/9fe6cee9b72cceb5d2e316a9733843ecf8f582a2) by [@liblaf](https://github.com/liblaf)
 - migrate from pnpm to bun and streamline release workflow - [4afb8b4](https://github.com/liblaf/copier-typescript/commit/4afb8b4180dd0150399591924c985bd6b9182160) by [@liblaf](https://github.com/liblaf)
 - restructure project configuration and workflows - [b3d382a](https://github.com/liblaf/copier-typescript/commit/b3d382ab6847a7287ec6436feb90194b75ed6be2) by [@liblaf](https://github.com/liblaf)
 
 ### ⚙️ Continuous Integration
 
-- **(github)** add workflow for TypeScript checking - [3380122](https://github.com/liblaf/copier-typescript/commit/3380122cfb38f2c9e2cd264c9c9cf1103f5843ce) by [@liblaf](https://github.com/liblaf)
-- **(release)** remove pre-release workflow - [f9dadf9](https://github.com/liblaf/copier-typescript/commit/f9dadf942c1d94505ff84657e4eaec64d4dc75e0) by [@liblaf](https://github.com/liblaf)
-- **(tsc)** enable pretty output - [32d11db](https://github.com/liblaf/copier-typescript/commit/32d11dbe2289e6f3d5984c3ad282d1e09de70161) by [@liblaf](https://github.com/liblaf)
-- **(workflows)** restructure release process into separate build and publish workflows - [b6e9cd1](https://github.com/liblaf/copier-typescript/commit/b6e9cd111fe15cd6ec705152c62e86820722c862) by [@liblaf](https://github.com/liblaf)
+- **github:** add workflow for TypeScript checking - [3380122](https://github.com/liblaf/copier-typescript/commit/3380122cfb38f2c9e2cd264c9c9cf1103f5843ce) by [@liblaf](https://github.com/liblaf)
+- **release:** remove pre-release workflow - [f9dadf9](https://github.com/liblaf/copier-typescript/commit/f9dadf942c1d94505ff84657e4eaec64d4dc75e0) by [@liblaf](https://github.com/liblaf)
+- **tsc:** enable pretty output - [32d11db](https://github.com/liblaf/copier-typescript/commit/32d11dbe2289e6f3d5984c3ad282d1e09de70161) by [@liblaf](https://github.com/liblaf)
+- **workflows:** restructure release process into separate build and publish workflows - [b6e9cd1](https://github.com/liblaf/copier-typescript/commit/b6e9cd111fe15cd6ec705152c62e86820722c862) by [@liblaf](https://github.com/liblaf)
 - add CI workflow for build, publish, and release processes - [8f9a4cf](https://github.com/liblaf/copier-typescript/commit/8f9a4cfea810a7bd5a96ff240149c08aaae1df23) by [@liblaf](https://github.com/liblaf)
 - add GitHub workflows and configuration files - [c01cce0](https://github.com/liblaf/copier-typescript/commit/c01cce0a5cc5f024aa4873dc1a1bb77262d5cbd4) by [@liblaf](https://github.com/liblaf)
 - renames workflow file and updates release step description - [88ecf4e](https://github.com/liblaf/copier-typescript/commit/88ecf4ee0cbc261def348946e1cb816b4e166f92) by [@liblaf](https://github.com/liblaf)
@@ -64,7 +79,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#16](https://github.com/liblaf/copier-typescript/pull/16)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#15](https://github.com/liblaf/copier-typescript/pull/15)
 - [@liblaf](https://github.com/liblaf) made their first contribution
 - [@copier-update[bot]](https://github.com/apps/copier-update) made their first contribution in [#11](https://github.com/liblaf/copier-typescript/pull/11)
 - [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#10](https://github.com/liblaf/copier-typescript/pull/10)
