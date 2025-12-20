@@ -7,6 +7,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1](https://github.com/liblaf/copier-typescript/releases/tag/v0.2.1) - 2025-12-20
+
+### 🐛 Bug Fixes
+
+- **template:** streamline CI and update tooling - [fbe4317](https://github.com/liblaf/copier-typescript/commit/fbe431715fb5ea239b3872aa4f69c6441dede260) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@renovate[bot]](https://github.com/apps/renovate) made their first contribution in [#28](https://github.com/liblaf/copier-typescript/pull/28)
+- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#27](https://github.com/liblaf/copier-typescript/pull/27)
+
 ## [0.2.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.2.0) - 2025-11-15
 
 ### 🐛 Bug Fixes
@@ -20,8 +32,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@liblaf](https://github.com/liblaf) made their first contribution
-- [@liblaf[bot]](https://github.com/apps/liblaf) made their first contribution in [#19](https://github.com/liblaf/copier-typescript/pull/19)
+- [@liblaf[bot]](https://github.com/apps/liblaf)
+- [@liblaf](https://github.com/liblaf)
 
 ## [0.1.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.1.0) - 2025-11-03
 
