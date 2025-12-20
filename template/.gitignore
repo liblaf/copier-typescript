@@ -1,9 +1,8 @@
 # ref: <https://github.com/github/gitignore/blob/main/Node.gitignore>
 
-# shared
+# Globally Useful gitignores
 *.log
 *.log.*
-playground/
 
 # Coverage directory
 coverage/
@@ -18,16 +17,16 @@ node_modules/
 # dotenv environment variable files
 .env
 .env.*
-!.env.project
+!.env.example
 !.env.vault
 
-# Nuxt.js build / generate output
+# build / generate output
 dist/
 
 # Test Results
 junit.xml
 
-# Cloudflare
+# Cloudflare Workers
 .dev.vars
 .wrangler/
 worker-configuration.d.ts

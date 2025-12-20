@@ -5,11 +5,8 @@ name: Test
 
 on:
   push:
-    branches-ignore:
-      - copier-update
-      - mega-linter-fix/**
-      - pre-commit-ci-update-config
-      - release-please--branches**
+    branches:
+      - main
   pull_request:
   workflow_dispatch:
 
@@ -82,8 +79,9 @@ jobs:
           use_oidc: true
       - if: success() || failure()
         name: Upload Test Report
-        uses: codecov/test-results-action@v1
+        uses: codecov/codecov-action@v5
         with:
+          report_type: test_results
           use_oidc: true
 
   tsc:

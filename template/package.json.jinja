@@ -1,28 +1,28 @@
 {
   "name": "{{ package_name }}",
-  "description": "",
   "version": "0.1.0",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
+  "description": "",
   "keywords": [],
   "homepage": "https://github.com/{{ github_user }}/{{ github_repo }}",
   "bugs": {
     "url": "https://github.com/{{ github_user }}/{{ github_repo }}/issues"
   },
+  "repository": "github:{{ github_user }}/{{ github_repo }}",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/{{ github_user }}/{{ github_repo }}?sponsor=1"
+  },
   "license": "MIT",
   "author": {
     "name": "{{ author_name }}",
-    "url": "https://github.com/{{ github_user }}",
-    "email": "{{ author_email }}"
+    "email": "{{ author_email }}",
+    "url": "https://github.com/{{ github_user }}"
   },
+  "type": "module",
   "bin": {},
-  "repository": "github:{{ github_user }}/{{ github_repo }}",
-  "funding": {
-    "url": "https://github.com/{{ github_user }}/{{ github_repo }}?sponsor=1",
-    "type": "github"
-  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bunup",
     "format": "biome format",
@@ -35,12 +35,19 @@
     "test:watch": "bun test --watch",
     "type-check": "tsc --noEmit"
   },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-packagejson"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@liblaf/config": "^0.1",
     "@types/bun": "^1",
-    "bunup": "^0.15",
+    "bunup": "^0.16",
+    "prettier": "^3",
+    "prettier-plugin-packagejson": "^2",
     "typescript": "^5"
   },
   "peerDependencies": {
@@ -53,8 +60,8 @@
   },
   "publishConfig": {
     "access": "public",
-    "registry": "https://registry.npmjs.org/",
-    "provenance": true
+    "provenance": true,
+    "registry": "https://registry.npmjs.org/"
   },
   "readme": "./README.md"
 }
