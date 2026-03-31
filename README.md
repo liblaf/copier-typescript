@@ -1,63 +1,93 @@
-<div align="center"><a name="readme-top"></a>
+<div align="center" markdown>
 
-![copier-typescript](https://socialify.git.ci/liblaf/copier-typescript/image?custom_language=TypeScript&description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fcopier-org%2Fcopier%2Frefs%2Fheads%2Fmaster%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Transparent&pulls=1&stargazers=1&theme=Auto)
+![Copier TypeScript](https://socialify.git.ci/liblaf/copier-typescript/image?custom_language=TypeScript&description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fcopier-org%2Fcopier%2Frefs%2Fheads%2Fmaster%2Fimg%2Flogo.svg&name=1&owner=1&pattern=Transparent&pulls=1&stargazers=1&theme=Auto)
 
 [![Made with Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-black.json)](https://github.com/copier-org/copier)
+[![Bun](https://img.shields.io/badge/Bun-000000?logo=bun)](https://bun.sh)
+[![Checked with Biome](https://img.shields.io/badge/Checked_with-Biome-60a5fa?style=flat&logo=biome)](https://biomejs.dev)
+[![Release / PR](https://github.com/liblaf/copier-typescript/actions/workflows/release-pr.yaml/badge.svg)](https://github.com/liblaf/copier-typescript/actions/workflows/release-pr.yaml)
+[![Shared / MegaLinter](https://github.com/liblaf/copier-typescript/actions/workflows/shared-mega-linter.yaml/badge.svg)](https://github.com/liblaf/copier-typescript/actions/workflows/shared-mega-linter.yaml)
 
 [Changelog](https://github.com/liblaf/copier-typescript/blob/main/CHANGELOG.md) · [Report Bug](https://github.com/liblaf/copier-typescript/issues) · [Request Feature](https://github.com/liblaf/copier-typescript/issues)
 
-![](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+![Rule](https://cdn.jsdelivr.net/gh/andreasbm/readme/assets/lines/rainbow.png)
 
 </div>
 
+Copier template for TypeScript packages that layers on top of `gh:liblaf/copier-shared` and `gh:liblaf/copier-release`, generating a Bun-first library setup with Biome, GitHub Actions, and npm publishing via OIDC.
+
 ## ✨ Features
 
-- 🚀 **Quick Setup:** Get started instantly with a pre-configured TypeScript project including linting, formatting, and testing tools;
-- ⚡ **Blazing Fast Tooling:** Leverage Bun for ultra-fast package management and execution, combined with Biome for rapid formatting and linting;
-- 🤖 **Automated Workflows:** Built-in GitHub Actions handle building, testing, and publishing with minimal configuration required;
-- 📦 **Publishing Ready:** Pre-configured for npm publishing with provenance and public access settings;
-- 🛠️ **Standardized Configuration:** Consistent setup with shared TypeScript and Biome configurations from @liblaf/config;
-- 🔧 **Flexible Customization:** Easily modify configurations for TypeScript, Biome, and package settings through intuitive templates;
+- 🧱 **Composable template stack:** Designed to be applied after `gh:liblaf/copier-shared` and `gh:liblaf/copier-release`, reusing shared answers and release automation instead of rebuilding them from scratch.
+- ⚡ **Bun-first package workflow:** Generates `package.json` scripts for `build`, `lint`, `test`, and `type-check`, uses `bunup` for builds, and adds a `mise` enter hook that runs `bun install`.
+- 🧼 **Opinionated library defaults:** Ships `biome.jsonc` and `tsconfig.json` that extend `@liblaf/config`, marks the package as ESM, and publishes only `dist/` with npm provenance enabled.
+- 🧪 **CI that matches real projects:** The generated `typescript-test.yaml` packs the package on pushes and pull requests, runs tests only when `*.test.ts` files exist, uploads coverage and test results to Codecov, and runs `tsc --noEmit`.
+- 🚀 **Release automation for npm:** Conventional commits feed the release PR flow from `copier-release`, while the generated `typescript-release.yaml` builds release artifacts, publishes to npm with OIDC, and uploads release assets.
+- 🛡️ **Safer template application:** Skips overwriting existing `package.json`, `tsconfig.json`, `biome.jsonc`, `.gitignore`, and VS Code settings when those files are already present.
 
 ## 📦 Installation
 
-To install `copier-typescript`, run the following command:
+> [!IMPORTANT]
+> This template is meant to layer on top of `gh:liblaf/copier-shared` and `gh:liblaf/copier-release`.
 
 ```bash
-copier copy --trust gh:liblaf/copier-typescript .
+copier copy --trust gh:liblaf/copier-shared my-package
+copier copy --trust gh:liblaf/copier-release my-package
+copier copy --trust gh:liblaf/copier-typescript my-package
 ```
 
+When prompted, `package_name` defaults to `@<github_user>/<project_name_slug>`.
+
+## 🚀 Quick Start
+
+```bash
+cd my-package
+bun install
+bun run lint
+bun run test
+bun run type-check
+bun run build
+```
+
+Generated projects are ESM-first with `"type": "module"`. If you use `mise`, entering the project also adds `node_modules/.bin` to `PATH` and runs `bun install` automatically.
+
+## 🔄 Release Flow
+
+1. Write conventional commits on `main`.
+2. `release-pr.yaml` computes the next version, updates `CHANGELOG.md`, and opens a release PR.
+3. Merging that PR triggers `release-draft.yaml`, which tags the release and creates the GitHub release. If immutable releases are enabled, it creates a draft first.
+4. Published releases trigger `typescript-release.yaml`, which packs the project, publishes to npm with OIDC and provenance, and uploads the built tarball as a release asset.
+5. `release-publish.yaml` runs hourly and publishes drafts older than 6 hours when immutable releases are enabled.
+
+> [!TIP]
+> After scaffolding a new repository, use `setup-npm-trusted-publish` so the `npm` environment and trusted publisher are ready for OIDC-based publishing.
+
 ## ⌨️ Local Development
-
-You can use Github Codespaces for online development:
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/liblaf/copier-typescript)
-
-Or clone it for local development:
 
 ```bash
 git clone https://github.com/liblaf/copier-typescript.git
 cd copier-typescript
+copier copy --trust gh:liblaf/copier-shared ../copier-typescript-sandbox
+copier copy --trust gh:liblaf/copier-release ../copier-typescript-sandbox
+copier copy --trust . ../copier-typescript-sandbox
 ```
+
+Most day-to-day changes live in `copier.yaml` and `template/`. Recopying into a scratch repository is the quickest way to verify the generated package layout and workflows.
 
 ## 🤝 Contributing
 
-Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues](https://github.com/liblaf/copier-typescript/issues) to get stuck in to show us what you're made of.
+Issues and pull requests are welcome, especially when they tighten the generated package surface, improve the release flow, or keep the Bun and Biome defaults sharp.
 
-[![PR Welcome](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-typescript/pulls)
+[![PR WELCOME](https://img.shields.io/badge/%F0%9F%A4%AF%20PR%20WELCOME-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge)](https://github.com/liblaf/copier-typescript/pulls)
 
 [![Contributors](https://contrib.nn.ci/api?repo=liblaf/copier-typescript)](https://github.com/liblaf/copier-typescript/graphs/contributors)
 
 ## 🔗 More Copier Templates
 
-<!-- tangerine-start: projects/copier.md -->
-
-- **[Shared](https://github.com/liblaf/copier-shared)** - ✨ Automated code quality and maintenance for your projects: A Copier template with pre-commit hooks, MegaLinter, and auto-update workflows.
-- **[Release](https://github.com/liblaf/copier-release)** - 🚀 Automated release management with Copier and Release Please
-- **[Python](https://github.com/liblaf/copier-python)** - 🐍 A modern Copier template for Python projects. Pre-configured with mise, ruff, pytest, mkdocs, and GitHub Actions workflows for seamless development.
-- **[Rust](https://github.com/liblaf/copier-rust)** - 🦀 Copier template for Rust projects with cross-compilation, CI/CD, and release automation
-- **[TypeScript](https://github.com/liblaf/copier-typescript)** - 🚀 Kickstart your TypeScript project with modern tools like Bun, Biome, and automated CI/CD workflows.
-<!-- tangerine-end -->
+- **[Shared](https://github.com/liblaf/copier-shared)** - Base repository hygiene, shared automation, MegaLinter, and recurring maintenance workflows.
+- **[Release](https://github.com/liblaf/copier-release)** - Conventional-commit release PRs, changelog generation, draft releases, and scheduled publish automation.
+- **[Python](https://github.com/liblaf/copier-python)** - A modern Python project template with `mise`, Ruff, pytest, docs, and GitHub Actions.
+- **[Rust](https://github.com/liblaf/copier-rust)** - A Rust project template with cross-compilation, CI, and release automation.
 
 ---
 

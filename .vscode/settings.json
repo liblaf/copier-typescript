@@ -4,5 +4,8 @@
   },
   "files.exclude": {
     "**/node_modules": true
+  },
+  "json.schemaDownload.trustedDomains": {
+    "https://biomejs.dev/schemas/latest/schema.json": true
   }
 }
