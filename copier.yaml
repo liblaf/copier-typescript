@@ -5,22 +5,6 @@ _answers_file: .config/copier/.copier-answers.typescript.yaml
 _external_data:
   shared: "{{ answers_file_shared }}"
 
-_envops:
-  comment_start_string: "# {#"
-  line_statement_prefix: "# %%"
-
-_migrations: &migrations
-  - rm --force --verbose '.config/copier/tsconfig.build.json'
-  - rm --force --verbose '.config/linters/biome.jsonc'
-  - rm --force --verbose '.github/copier/.copier-answers.typescript.yaml'
-  - rm --force --verbose '.github/linters/biome.jsonc'
-  - rm --force --verbose '.github/workflows/build.yaml' # TODO: remove this migration in the future
-  - rm --force --verbose '.github/workflows/publish.yaml'
-  - rm --force --verbose '.github/workflows/shared-release.yaml'
-  - rm --force --verbose '.github/workflows/tsc.yaml'
-  - rm --force --verbose '.prettierignore'
-  - rm --force --verbose '.prettierrc.json'
-
 _skip_if_exists:
   - .config/mise/config.toml
   - .gitignore
@@ -31,7 +15,19 @@ _skip_if_exists:
 
 _subdirectory: template
 
-_tasks: *migrations
+_tasks:
+  - rm --force --verbose '.config/copier/tsconfig.build.json'
+  - rm --force --verbose '.config/linters/biome.jsonc'
+  - rm --force --verbose '.config/mise/conf.d/10-typescript.toml'
+  - rm --force --verbose '.github/copier/.copier-answers.typescript.yaml'
+  - rm --force --verbose '.github/linters/biome.jsonc'
+  - rm --force --verbose '.github/workflows/publish.yaml'
+  - rm --force --verbose '.github/workflows/release.yaml'
+  - rm --force --verbose '.github/workflows/shared-release.yaml'
+  - rm --force --verbose '.github/workflows/test.yaml'
+  - rm --force --verbose '.github/workflows/tsc.yaml'
+  - rm --force --verbose '.prettierignore'
+  - rm --force --verbose '.prettierrc.json'
 
 answers_file_shared:
   type: str
