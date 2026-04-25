@@ -7,6 +7,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.0) - 2026-04-25
+
+### 💥 BREAKING CHANGES
+
+- generated projects now use OXC-based `fmt` and `lint` scripts instead of the previous Biome and Prettier setup. - [faf7411](https://github.com/liblaf/copier-typescript/commit/faf74112f968ce0ca632aa5a6571699fbb3eab7d) by [@liblaf](https://github.com/liblaf)
+
+### 🛠 Builds
+
+- **\[breaking\]** migrate TypeScript template to OXC tooling - [faf7411](https://github.com/liblaf/copier-typescript/commit/faf74112f968ce0ca632aa5a6571699fbb3eab7d) by [@liblaf](https://github.com/liblaf)
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update actions/upload-artifact digest to 043fb46 (#46) - [2021dd3](https://github.com/liblaf/copier-typescript/commit/2021dd332a5c49f8c06ce3c13d71f1bae2fdccb6) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update softprops/action-gh-release digest to 3bb1273 (#48) - [7a9b987](https://github.com/liblaf/copier-typescript/commit/7a9b987659ef80859c635e80ba1604387f280a92) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update softprops/action-gh-release action to v3 (#49) - [4f811f7](https://github.com/liblaf/copier-typescript/commit/4f811f74e6b1f57c68f42d034565e78e1abe0553) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/setup-node digest to 48b55a0 (#50) - [705790b](https://github.com/liblaf/copier-typescript/commit/705790b30d6f0161cefd8950c0517702a597c0a0) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update softprops/action-gh-release action to v3 (#53) - [92f14a3](https://github.com/liblaf/copier-typescript/commit/92f14a36fb5cdb2a2574aed60874f5a7d5f92b9a) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/upload-artifact digest to 043fb46 (#51) - [586c811](https://github.com/liblaf/copier-typescript/commit/586c81185871a76ced5961f033f2b32ccb9b89ad) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+- [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier) made their first contribution in [#45](https://github.com/liblaf/copier-typescript/pull/45)
+
 ## [v0.3.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.3.0) - 2026-03-31
 
 ### 💥 BREAKING CHANGES
@@ -19,6 +44,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please) made their first contribution in [#42](https://github.com/liblaf/copier-typescript/pull/42)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf[bot]](https://github.com/apps/liblaf)
