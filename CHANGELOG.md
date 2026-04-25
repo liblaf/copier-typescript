@@ -7,6 +7,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.1](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.1) - 2026-04-25
+
+### 🛠 Builds
+
+- add dependency update scripts - [f476998](https://github.com/liblaf/copier-typescript/commit/f476998b56deb305ce7806999e56ddfecac636cc) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+
 ## [v0.4.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.0) - 2026-04-25
 
 ### 💥 BREAKING CHANGES
@@ -28,6 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier) made their first contribution in [#45](https://github.com/liblaf/copier-typescript/pull/45)
