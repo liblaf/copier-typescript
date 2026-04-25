@@ -9,16 +9,18 @@ enableGlobDot: true
 ignorePaths:
   - .git/
   - cspell.*
+  - "*.lock"
 ignoreRandomStrings: true
 maxFileSize: 500KB
 useGitignore: true
 words:
-  - biomejs
   - bunup
   - dotenv
   - liblaf
-  - mkdocs
+  - oxfmt
+  - oxlint
   - pipx
   - pytest
   - rumdl
   - taiki
+  - tsgolint

@@ -3,8 +3,5 @@
     "**/.wrangler/": true,
     "**/dist/": true,
     "**/node_modules/": true
-  },
-  "json.schemaDownload.trustedDomains": {
-    "https://biomejs.dev/schemas/latest/schema.json": true
   }
 }

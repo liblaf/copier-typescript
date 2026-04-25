@@ -1,67 +1,49 @@
 {
   "name": "{{ package_name }}",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "",
   "keywords": [],
   "homepage": "https://github.com/{{ github_user }}/{{ github_repo }}",
   "bugs": {
     "url": "https://github.com/{{ github_user }}/{{ github_repo }}/issues"
   },
-  "repository": "github:{{ github_user }}/{{ github_repo }}",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/{{ github_user }}/{{ github_repo }}?sponsor=1"
-  },
-  "license": "MIT",
+  "license": "{{ license }}",
   "author": {
     "name": "{{ author_name }}",
     "email": "{{ author_email }}",
     "url": "https://github.com/{{ github_user }}"
   },
-  "type": "module",
-  "bin": {},
+  "repository": "github:{{ github_user }}/{{ github_repo }}",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/{{ github_user }}/{{ github_repo }}?sponsor=1"
+  },
   "files": [
     "dist"
   ],
-  "scripts": {
-    "build": "bunup",
-    "format": "biome format",
-    "format:fix": "biome format --write",
-    "lint": "biome check",
-    "lint:fix": "biome check --write",
-    "prepack": "npm run build",
-    "test": "bun test",
-    "test:coverage": "bun test --coverage",
-    "test:watch": "bun test --watch",
-    "type-check": "tsc --noEmit"
-  },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-packagejson"
-    ]
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@biomejs/biome": "^2",
-    "@liblaf/config": "^0.1",
-    "@types/bun": "^1",
-    "bunup": "^0.16",
-    "prettier": "^3",
-    "prettier-plugin-packagejson": "^2",
-    "typescript": "^5"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
-  },
+  "type": "module",
+  "exports": {},
   "publishConfig": {
     "access": "public",
     "provenance": true,
     "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "bunup",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "prepack": "bun run build",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@liblaf/config": "latest",
+    "bunup": "latest",
+    "oxfmt": "latest",
+    "oxlint": "latest",
+    "oxlint-tsgolint": "latest",
+    "typescript": "latest"
   },
   "readme": "./README.md"
 }
