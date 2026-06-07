@@ -7,6 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.2](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.2) - 2026-06-07
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update codecov/codecov-action digest to e79a696 (#70) - [cee76bf](https://github.com/liblaf/copier-typescript/commit/cee76bf699214ed73bc94383d0e80027e70f64b6) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/checkout digest to df4cb1c (#82) - [b31ac00](https://github.com/liblaf/copier-typescript/commit/b31ac0016e7c8069b7ffd13ea076d3a5fedf9b3a) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update codecov/codecov-action action to v7 (#86) - [e9da352](https://github.com/liblaf/copier-typescript/commit/e9da3527c7ff3c43c299a5db098fdb0fa4c67704) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@liblaf](https://github.com/liblaf)
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.4.1](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.1) - 2026-04-25
 
 ### 🛠 Builds
@@ -15,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 
 ## [v0.4.0](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.0) - 2026-04-25
@@ -93,12 +107,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 💥 BREAKING CHANGES
 
 - **(build)** This change replaces tsup with bunup
-  as the build tool and modifies the package.json structure.
-  Projects using this template will need to update their
-  build process and may need to adjust their imports. - [fda6b75](https://github.com/liblaf/copier-typescript/commit/fda6b7572a9a38be4fc90af6c576ba80a20da9e1) by [@liblaf](https://github.com/liblaf)
+as the build tool and modifies the package.json structure.
+Projects using this template will need to update their
+build process and may need to adjust their imports. - [fda6b75](https://github.com/liblaf/copier-typescript/commit/fda6b7572a9a38be4fc90af6c576ba80a20da9e1) by [@liblaf](https://github.com/liblaf)
 - **(release)** The pre-release workflow has been removed.
-  Teams relying on automatic dev releases will need to adjust
-  their processes accordingly. - [f9dadf9](https://github.com/liblaf/copier-typescript/commit/f9dadf942c1d94505ff84657e4eaec64d4dc75e0) by [@liblaf](https://github.com/liblaf)
+Teams relying on automatic dev releases will need to adjust
+their processes accordingly. - [f9dadf9](https://github.com/liblaf/copier-typescript/commit/f9dadf942c1d94505ff84657e4eaec64d4dc75e0) by [@liblaf](https://github.com/liblaf)
 - **(workflows)** The release.yaml workflow has been removed. Projects using this template must transition to the new build.yaml and publish.yaml workflows. - [b6e9cd1](https://github.com/liblaf/copier-typescript/commit/b6e9cd111fe15cd6ec705152c62e86820722c862) by [@liblaf](https://github.com/liblaf)
 
 ### ✨ Features
