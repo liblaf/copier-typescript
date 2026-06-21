@@ -7,6 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.3](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.3) - 2026-06-19
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update actions/checkout action to v7 (#95) - [f337c5f](https://github.com/liblaf/copier-typescript/commit/f337c5f8b9ca011f07f3cf45e67bd5793c1acb65) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update softprops/action-gh-release digest to 718ea10 (#96) - [b9bcc33](https://github.com/liblaf/copier-typescript/commit/b9bcc337ec2444cb5714ba3cd530c2ef27e3dfea) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.4.2](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.2) - 2026-06-07
 
 ### ⚙️ Continuous Integrations
@@ -17,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf](https://github.com/liblaf)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
