@@ -7,7 +7,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.4.4](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.4) - 2026-07-17
+## [v0.4.5](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.5) - 2026-07-25
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update actions/checkout digest to 3d3c42e (#123) - [f2581b1](https://github.com/liblaf/copier-typescript/commit/f2581b168dce1ca7a3d25529528aea90979737f2) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.4.4](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.4) - 2026-07-19
 
 ### ⚙️ Continuous Integrations
 
@@ -17,8 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+- [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.4.3](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.3) - 2026-06-21
 
