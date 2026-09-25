@@ -7,7 +7,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.4.7](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.7) - 2026-09-19
+## [v0.4.8](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.8) - 2026-09-25
+
+### 🐛 Bug Fixes
+
+- **(mise)** install dependencies only when node_modules is missing - [3925895](https://github.com/liblaf/copier-typescript/commit/39258955dfbe5f525d51a471b6b6719d354a688e) by [@liblaf](https://github.com/liblaf)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf](https://github.com/liblaf)
+
+## [v0.4.7](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.7) - 2026-09-20
 
 ### ⚙️ Continuous Integrations
 
@@ -16,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 
 ## [v0.4.6](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.6) - 2026-09-06
