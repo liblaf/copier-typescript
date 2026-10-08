@@ -7,7 +7,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [v0.4.8](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.8) - 2026-10-02
+## [v0.4.9](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.9) - 2026-10-08
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update actions/download-artifact digest to 9000827 (#183) - [3e61c51](https://github.com/liblaf/copier-typescript/commit/3e61c51de4b074084a7028504dadf048e3a3300c) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/upload-artifact digest to cf430e0 (#184) - [e6503c6](https://github.com/liblaf/copier-typescript/commit/e6503c6e96361aa9d503c79d9979da8b78f8db1b) by [@renovate[bot]](https://github.com/apps/renovate)
+- **(deps)** update actions/setup-node digest to 949feb2 (#186) - [0f0369d](https://github.com/liblaf/copier-typescript/commit/0f0369d374bb930527cf38870f7f573693c1c5ec) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
+## [v0.4.8](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.8) - 2026-10-04
 
 ### 🐛 Bug Fixes
 
@@ -15,8 +27,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
-- [@renovate[bot]](https://github.com/apps/renovate)
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
+- [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf](https://github.com/liblaf)
 
 ## [v0.4.7](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.7) - 2026-09-20
