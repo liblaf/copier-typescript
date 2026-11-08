@@ -7,6 +7,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.2.0/README.md),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v0.4.10](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.10) - 2026-11-06
+
+### ⚙️ Continuous Integrations
+
+- **(deps)** update softprops/action-gh-release digest to 8a0cd65 (#206) - [545e704](https://github.com/liblaf/copier-typescript/commit/545e7049606223d84f7661d340c7df30314d8576) by [@renovate[bot]](https://github.com/apps/renovate)
+
+### ❤️ Contributors
+
+- [@renovate[bot]](https://github.com/apps/renovate)
+
 ## [v0.4.9](https://github.com/liblaf/copier-typescript/releases/tag/v0.4.9) - 2026-11-01
 
 ### ⚙️ Continuous Integrations
@@ -17,6 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### ❤️ Contributors
 
+- [@liblaf-release-please[bot]](https://github.com/apps/liblaf-release-please)
 - [@renovate[bot]](https://github.com/apps/renovate)
 - [@liblaf-copier[bot]](https://github.com/apps/liblaf-copier)
 
